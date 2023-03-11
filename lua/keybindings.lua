@@ -21,8 +21,8 @@ map("n", "<A-k>", "<C-w>k", opt)
 map("n", "<A-l>", "<C-w>l", opt)
 
 -- 左右比例控制
-map("n", "<C-Left>", ":vertical resize -2<CR>", opt)
-map("n", "<C-Right>", ":vertical resize +2<CR>", opt)
+map("n", "<A-Left>", ":vertical resize -2<CR>", opt)
+map("n", "<A-Right>", ":vertical resize +2<CR>", opt)
 map("n", "s,", ":vertical resize -20<CR>", opt)
 map("n", "s.", ":vertical resize +20<CR>", opt)
 -- 上下比例
@@ -83,6 +83,8 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 -- nvim-tree
 -- alt + m 键打开或关闭tree
 map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
+-- alt + n 键打开或关闭gtag
+map("n", "<A-t>", ":TagbarToggle<CR>", opt)
 -- git blame
 map("n", "<A-b>", ":BlamerToggle<CR>", opt)
 -- Telescope

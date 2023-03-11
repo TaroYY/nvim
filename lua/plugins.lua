@@ -74,7 +74,7 @@ packer.startup({
     -- 括号自动补全
     use("jiangmiao/auto-pairs")
     -- 大纲式导航栏
-    use("majutsushi/tagbar")
+    use("preservim/tagbar")
     -- markdown preview 
     use("instant-markdown/vim-instant-markdown")
   end,
