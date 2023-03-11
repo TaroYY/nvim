@@ -3,7 +3,7 @@
 > <br>花了19块买的小册子，入门了vim的一些配置，配置主要用lua编写，还需要更熟悉些lua
 <br>
 ### 录屏
-![录屏](https://github.com/TaroYY/nvim/blob/main/resources/images/nvim_scree_record_2023_03_11.gif?raw=true "预览录屏")
+![录屏](https://github.com/TaroYY/nvim/blob/main/resources/images/nvim_scree_record_2023_03_11.gif "预览录屏")
 ### 主要功能
 - 左侧文件列表
 - LSP（Language Server Protocal）管理
