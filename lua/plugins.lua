@@ -75,8 +75,8 @@ packer.startup({
     use("jiangmiao/auto-pairs")
     -- 大纲式导航栏
     use("majutsushi/tagbar")
-    -- formatter
-    use("mhartington/formatter.nvim")
+    -- markdown preview 
+    use("instant-markdown/vim-instant-markdown")
   end,
   config = {
     -- 并发数限制
