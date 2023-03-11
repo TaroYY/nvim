@@ -242,7 +242,7 @@ _G.packer_plugins = {
   tagbar = {
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/tagbar",
-    url = "https://github.com/majutsushi/tagbar"
+    url = "https://github.com/preservim/tagbar"
   },
   ["telescope-env.nvim"] = {
     loaded = true,
