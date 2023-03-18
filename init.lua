@@ -6,6 +6,8 @@ require('keybindings')
 require("plugins")
 -- 主题设置
 require("colorscheme")
+-- 自动执行命令
+require("autocmds")
 -- 插件配置
 require("plugin-config.nvim-tree")
 require("plugin-config.bufferline")
@@ -17,3 +19,6 @@ require("lsp.setup")
 require("lsp.cmp")
 require("plugin-config.indent-blankline")
 require("lsp.formatter")
+require("plugin-config.comment")
+require("utils.im-select")
+require("plugin-config.barbecue")
