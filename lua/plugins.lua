@@ -9,12 +9,14 @@ packer.startup({
     use("folke/tokyonight.nvim")
     -- sonokai
     use("sainnhe/sonokai")
+    -- catppuccin
+    use({ "catppuccin/nvim", as = "catppuccin" })
     -- nvim-tree
-    use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
+    use({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" })
     -- bufferline
-    use({ "akinsho/bufferline.nvim", requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" } })
+    use({ "akinsho/bufferline.nvim", requires = { "nvim-tree/nvim-web-devicons", "moll/vim-bbye" } })
     -- lualine
-    use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
+    use({ "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons" } })
     use("arkav/lualine-lsp-progress")
     -- telescope
     use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
@@ -25,7 +27,7 @@ packer.startup({
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-        --------------------- LSP --------------------
+    --------------------- LSP --------------------
     -- installer
     use({ "williamboman/mason.nvim" })
     use({ "williamboman/mason-lspconfig.nvim" })
@@ -63,7 +65,14 @@ packer.startup({
 
     -- git blame
     use("APZelos/blamer.nvim")
-
+    -- git conflict
+    use({
+      'akinsho/git-conflict.nvim',
+      tag = "*",
+      config = function()
+        require('git-conflict').setup()
+      end
+    })
     -- indent-blankline
     use("lukas-reineke/indent-blankline.nvim")
 
@@ -75,8 +84,32 @@ packer.startup({
     use("jiangmiao/auto-pairs")
     -- 大纲式导航栏
     use("preservim/tagbar")
-    -- markdown preview 
+    -- markdown preview
     use("instant-markdown/vim-instant-markdown")
+    -- Comment
+    use("numToStr/Comment.nvim")
+    -- 快速跳转
+    use {
+      'phaazon/hop.nvim',
+      branch = 'v2', -- optional but strongly recommended
+      config = function()
+        -- you can configure Hop the way you like here; see :h hop-config
+        require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+      end
+    }
+    -- vscode like tab barbecue
+    use({
+      "utilyre/barbecue.nvim",
+      tag = "*",
+      requires = {
+        "SmiteshP/nvim-navic",
+        "nvim-tree/nvim-web-devicons", -- optional dependency
+      },
+      after = "nvim-web-devicons", -- keep this if you're using NvChad
+      config = function()
+        require("barbecue").setup()
+      end,
+    })
   end,
   config = {
     -- 并发数限制
