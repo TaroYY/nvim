@@ -109,9 +109,11 @@ packer.startup({
       config = function()
         require("barbecue").setup()
       end,
-      -- fugitive 好用的git插件
-      use("tpope/vim-fugitive")
     })
+    -- fugitive 好用的git内置命令
+    use("tpope/vim-fugitive")
+    -- vim-gitgutter git文件变化
+    use("airblade/vim-gitgutter")
   end,
   config = {
     -- 并发数限制
