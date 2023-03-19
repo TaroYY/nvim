@@ -309,6 +309,11 @@ _G.packer_plugins = {
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-instant-markdown"] = {
     loaded = true,
     path = "/Users/bytedance/.local/share/nvim/site/pack/packer/start/vim-instant-markdown",

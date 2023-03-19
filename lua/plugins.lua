@@ -109,6 +109,8 @@ packer.startup({
       config = function()
         require("barbecue").setup()
       end,
+      -- fugitive 好用的git插件
+      use("tpope/vim-fugitive")
     })
   end,
   config = {
