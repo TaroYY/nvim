@@ -114,6 +114,16 @@ packer.startup({
     use("tpope/vim-fugitive")
     -- vim-gitgutter git文件变化
     use("airblade/vim-gitgutter")
+    -- easy-motion 快速跳转
+    use("easymotion/vim-easymotion")
+    -- 搜索后取消高亮
+    use("haya14busa/is.vim")
+    -- 更改外包字符
+    use("tpope/vim-surround")
+    -- 用.重复上一步
+    use("tpope/vim-repeat")
+    -- undo tree
+    use("mbbill/undotree")
   end,
   config = {
     -- 并发数限制
