@@ -52,6 +52,7 @@ require("mason-lspconfig").setup({
 local servers = {
   lua_ls = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   gopls = require("lsp.config.gopls"), -- lua/lsp/config/gopls.lua
+  tsserver = require("lsp.config.ts"), -- lua/lsp/config/ts.lua
 }
 
 for name, config in pairs(servers) do

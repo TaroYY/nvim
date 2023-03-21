@@ -80,3 +80,5 @@ vim.o.showtabline = 2
 vim.o.showmode = false
 -- 系统剪切板
 vim.o.clipboard = "unnamed"
+-- color设置
+vim.g.onedark_termcolors = 16

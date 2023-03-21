@@ -52,8 +52,8 @@ map("v", "K", ":move '<-2<CR>gv-gv", opt)
 map("n", "<C-j>", "4j", opt)
 map("n", "<C-k>", "4k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
+map("n", "<C-u>", "50k", opt)
+map("n", "<C-d>", "50j", opt)
 
 -- 在visual 模式里粘贴不要复制
 map("v", "p", '"_dP', opt)
