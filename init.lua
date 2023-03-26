@@ -5,6 +5,7 @@ require('keybindings')
 -- Packer 插件管理
 require("plugins")
 -- 主题设置
+require("plugin-config.tokyonight")
 require("colorscheme")
 -- 自动执行命令
 require("autocmds")

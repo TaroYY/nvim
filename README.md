@@ -13,10 +13,11 @@
 - 底部状态栏
 - 顶部tab栏
 - 右侧大纲栏
-### TODO
 - git相关配置
+### TODO
 - test相关配置
-
+### 其他插件
+[插件广场](https://vimawesome.com/)
 
 ### 常用的快捷键配置
 以下快捷键是自己按照习惯配置的，可以根据个人习惯在```keybindings.lua```文件中修改
@@ -81,4 +82,5 @@ Mac: ```brew install xclip```,并将vimrc文件中的配置clipboard名称设置
 在设置里将option键作为meta键勾选上
 #### 为什么我的导航栏没有图标icon乱码了
 需要采用后缀带Nerd Font的字体
-
+#### git的使用
+可以采用```:Git add .```, ```:Git commit -m "some comments"```, ```:Git push```等命令实现git功能，减少对命令行的依赖
