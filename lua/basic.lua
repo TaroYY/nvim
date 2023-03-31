@@ -63,8 +63,8 @@ vim.o.splitright = true
 vim.g.comleteopt = "menu, menuone,noselect,noinsert"
 -- 样式
 vim.o.background = "dark"
-vim.o.termguicolors = true
-vim.opt.termguicolors = true
+vim.o.termguicolors = false
+vim.opt.termguicolors = false
 -- 不可见字符的显示，这里只把空格显示为一个点
 vim.o.list = false
 vim.o.listchars = "space:·,tab:···"

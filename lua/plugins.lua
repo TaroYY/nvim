@@ -126,6 +126,8 @@ packer.startup({
     use("tpope/vim-repeat")
     -- undo tree
     use("mbbill/undotree")
+    -- vim-go
+    use("fatih/vim-go")
   end,
   config = {
     -- 并发数限制
