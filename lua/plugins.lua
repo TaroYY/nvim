@@ -24,8 +24,6 @@ packer.startup({
     use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
     -- telescope extensions
     use "LinArcX/telescope-env.nvim"
-    -- dashboard-nvim
-    use("glepnir/dashboard-nvim")
     -- treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
