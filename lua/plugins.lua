@@ -9,6 +9,8 @@ packer.startup({
     use("folke/tokyonight.nvim")
     -- sonokai
     use("sainnhe/sonokai")
+    -- hardhackerlabs
+    use("hardhackerlabs/theme-vim")
     -- one dark
     use("joshdick/onedark.vim")
     -- catppuccin
