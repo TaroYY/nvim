@@ -33,10 +33,13 @@ autocmd("TermOpen", {
 })
 
 -- 保存时自动格式化
+-- format on save
 autocmd("BufWritePre", {
   group = myAutoGroup,
   pattern = { "*.lua", "*.py", "*.sh" },
-  callback = vim.lsp.buf.formatting_sync,
+  callback = function()
+    vim.lsp.buf.format()
+  end,
 })
 
 -- 修改lua/plugins.lua 自动更新插件
